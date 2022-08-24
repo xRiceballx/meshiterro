@@ -22,6 +22,7 @@ class PostImagesController < ApplicationController
 
   def show
     @post_image = PostImage.new(post_image_params)
+    @post_comment = PostComment.new
   end
 
   # 投稿データのストロングパラメータ
